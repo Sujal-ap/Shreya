@@ -1,0 +1,16 @@
+src/
+|-- components/
+|   |-- Header.js
+|   |-- Footer.js
+|   |-- ProductList.js
+|   |-- ProductItem.js
+|   |-- Signup.js
+|   |-- Banner.js
+|-- pages/
+|   |-- Home.js
+|   |-- ProductPage.js
+|   |-- SignupPage.js
+|-- services/
+|   |-- productService.js
+|-- App.js
+|-- index.js
