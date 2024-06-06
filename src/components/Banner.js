@@ -3,10 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../styles.css';  // Import the CSS file
-import bannerBg1 from 'shreya-frontend\src\images\bannerbg.jpg';     // Import the first image
-import bannerBg2 from 'shreya-frontend\src\images\bannerbg2.jpg';    // Import the second image
-import bannerBg3 from 'shreya-frontend\src\images\bannerbg3.jpg';    // Import the third image
+import '../style.css';  // Import the CSS file
 
 const Banner = () => {
   const settings = {
@@ -22,17 +19,17 @@ const Banner = () => {
 
   const slides = [
     {
-      image: bannerBg1,
+      image: '/images/bannerbg.jpg', // Adjust the path as needed
       title: 'Welcome to Vintage Thrift Store',
       description: 'Discover unique vintage clothing and accessories',
     },
     {
-      image: bannerBg2,
+      image: '/images/bannerbg2.jpg', // Adjust the path as needed
       title: 'New Arrivals',
       description: 'Check out our latest collection',
     },
     {
-      image: bannerBg3,
+      image: '/images/bannerbg3.jpg', // Adjust the path as needed
       title: 'Exclusive Offers',
       description: 'Special discounts on vintage items',
     },
