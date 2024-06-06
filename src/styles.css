@@ -60,15 +60,15 @@ footer {
 
 /* Define paths to all three background images */
 .banner-slide-1 {
-  background-image: url('./bannerbg.jpg'); /* Adjust the path as needed */
+  background-image: url('./images/bannerbg.jpg'); /* Adjust the path as needed */
 }
 
 .banner-slide-2 {
-  background-image: url('./bannerbg2.jpg'); /* Adjust the path as needed */
+  background-image: url('./images/bannerbg2.jpg'); /* Adjust the path as needed */
 }
 
 .banner-slide-3 {
-  background-image: url('./bannerbg3.jpg'); /* Adjust the path as needed */
+  background-image: url('./images/bannerbg3.jpg'); /* Adjust the path as needed */
 }
 
 /* Additional styles for banner slides */
