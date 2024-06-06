@@ -24,12 +24,12 @@ const Banner = () => {
       description: 'Discover unique vintage clothing and accessories',
     },
     {
-      image: 'images/bannerbg2.jpg',
+      image: '../images/bannerbg2.jpg',
       title: 'New Arrivals',
       description: 'Check out our latest collection',
     },
     {
-      image: 'images/bannerbg3.jpg',
+      image: '../images/bannerbg3.jpg',
       title: 'Exclusive Offers',
       description: 'Special discounts on vintage items',
     },
