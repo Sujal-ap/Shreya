@@ -3,14 +3,16 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Banner from './components/Banner';  // Import the Banner component
-import './styles.css';  // Ensure the styles are applied
+import Banner from './components/Banner';
+import ImageGrid from './components/ImageGrid'; // Import the ImageGrid component
+import './styles.css';  // Ensure the global styles are applied
 
 function App() {
   return (
     <Router>
       <Header />
-      <Banner />  {/* Add the Banner here */}
+      <Banner />
+      <ImageGrid /> {/* Add the ImageGrid here */}
       <main style={{ paddingBottom: '60px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
