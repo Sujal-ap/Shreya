@@ -19,7 +19,7 @@ const Banner = () => {
 
   const slides = [
     {
-      image: 'bannerbg.jpg',
+      image: '/bannerbg.jpg',
       title: 'Welcome to Vintage Thrift Store',
       description: 'Discover unique vintage clothing and accessories',
     },
