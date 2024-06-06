@@ -4,9 +4,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles.css';  // Import the CSS file
-import bannerBg1 from '../images/bannerbg.jpg';     // Import the first image
-import bannerBg2 from '../images/bannerbg2.jpg';    // Import the second image
-import bannerBg3 from '../images/bannerbg3.jpg';    // Import the third image
+import bannerBg1 from 'shreya-frontend\src\images\bannerbg.jpg';     // Import the first image
+import bannerBg2 from 'shreya-frontend\src\images\bannerbg2.jpg';    // Import the second image
+import bannerBg3 from 'shreya-frontend\src\images\bannerbg3.jpg';    // Import the third image
 
 const Banner = () => {
   const settings = {
