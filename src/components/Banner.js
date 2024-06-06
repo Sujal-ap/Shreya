@@ -4,6 +4,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles.css';  // Import the CSS file
+import bannerBg1 from '../bannerbg.jpg';     // Import the first image
+import bannerBg2 from '../bannerbg2.jpg';    // Import the second image
+import bannerBg3 from '../bannerbg3.jpg';    // Import the third image
 
 const Banner = () => {
   const settings = {
@@ -19,17 +22,17 @@ const Banner = () => {
 
   const slides = [
     {
-      image: '/images/bannerbg.jpg', // Adjust the path as needed
+      image: bannerBg1,
       title: 'Welcome to Vintage Thrift Store',
       description: 'Discover unique vintage clothing and accessories',
     },
     {
-      image: '/images/bannerbg2.jpg', // Adjust the path as needed
+      image: bannerBg2,
       title: 'New Arrivals',
       description: 'Check out our latest collection',
     },
     {
-      image: '/images/bannerbg3.jpg', // Adjust the path as needed
+      image: bannerBg3,
       title: 'Exclusive Offers',
       description: 'Special discounts on vintage items',
     },
