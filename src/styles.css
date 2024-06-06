@@ -55,3 +55,35 @@ footer {
   footer a:hover {
     color: #0056b3; /* Darker blue on hover */
   }
+
+  /* Styles for Banner */
+.banner-wrapper {
+  background-image: url('bannerbg.jpg');  /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner-wrapper {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-wrapper {
+    height: 150px;
+  }
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.5);  /* Optional: to make text stand out */
+  padding: 20px;
+  border-radius: 10px;
+}
