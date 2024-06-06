@@ -19,17 +19,17 @@ const Banner = () => {
 
   const slides = [
     {
-      image: 'shreya-frontend/images/bannerbg.jpg',
+      image: 'bannerbg.jpg',
       title: 'Welcome to Vintage Thrift Store',
       description: 'Discover unique vintage clothing and accessories',
     },
     {
-      image: 'shreya-frontend/images/bannerbg2.jpg',
+      image: 'images/bannerbg2.jpg',
       title: 'New Arrivals',
       description: 'Check out our latest collection',
     },
     {
-      image: 'shreya-frontend/images/bannerbg3.jpg',
+      image: 'images/bannerbg3.jpg',
       title: 'Exclusive Offers',
       description: 'Special discounts on vintage items',
     },
