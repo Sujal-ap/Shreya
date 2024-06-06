@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shreya-frontend/static/css/main.7f16954e.css",
+    "main.js": "/shreya-frontend/static/js/main.f223ee4d.js",
+    "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
+    "index.html": "/shreya-frontend/index.html",
+    "main.7f16954e.css.map": "/shreya-frontend/static/css/main.7f16954e.css.map",
+    "main.f223ee4d.js.map": "/shreya-frontend/static/js/main.f223ee4d.js.map",
+    "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f16954e.css",
+    "static/js/main.f223ee4d.js"
+  ]
+}
