@@ -34,98 +34,98 @@
 
 /* Define each grid item's background and hover image */
 .image-grid-item:nth-child(1) {
-  background-image: url('./images/gridimg/grid1.jpg');
+  background-image: url('../images/gridimg/grid1.jpg');
 }
 
 .image-grid-item:nth-child(1):before {
-  background-image: url('./images/gridhoverimg/grdhvr1.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr1.jpg');
 }
 
 .image-grid-item:nth-child(2) {
-  background-image: url('./images/gridimg/grid2.jpg');
+  background-image: url('../images/gridimg/grid2.jpg');
 }
 
 .image-grid-item:nth-child(2):before {
-  background-image: url('./images/gridhoverimg/grdhvr2.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr2.jpg');
 }
 
 /* Repeat for all 12 images */
 .image-grid-item:nth-child(3) {
-  background-image: url('./images/gridimg/grid3.jpg');
+  background-image: url('../images/gridimg/grid3.jpg');
 }
 
 .image-grid-item:nth-child(3):before {
-  background-image: url('./images/gridhoverimg/grdhvr3.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr3.jpg');
 }
 
 .image-grid-item:nth-child(4) {
-  background-image: url('./images/gridimg/grid4.jpg');
+  background-image: url('../images/gridimg/grid4.jpg');
 }
 
 .image-grid-item:nth-child(4):before {
-  background-image: url('./images/gridhoverimg/grdhvr4.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr4.jpg');
 }
 
 .image-grid-item:nth-child(5) {
-  background-image: url('./images/gridimg/grid5.jpg');
+  background-image: url('../images/gridimg/grid5.jpg');
 }
 
 .image-grid-item:nth-child(5):before {
-  background-image: url('./images/gridhoverimg/grdhvr5.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr5.jpg');
 }
 
 .image-grid-item:nth-child(6) {
-  background-image: url('./images/gridimg/grid6.jpg');
+  background-image: url('../images/gridimg/grid6.jpg');
 }
 
 .image-grid-item:nth-child(6):before {
-  background-image: url('./images/gridhoverimg/grdhvr6.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr6.jpg');
 }
 
 .image-grid-item:nth-child(7) {
-  background-image: url('./images/gridimg/grid7.jpg');
+  background-image: url('../images/gridimg/grid7.jpg');
 }
 
 .image-grid-item:nth-child(7):before {
-  background-image: url('./images/gridhoverimg/grdhvr7.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr7.jpg');
 }
 
 .image-grid-item:nth-child(8) {
-  background-image: url('./images/gridimg/grid8.jpg');
+  background-image: url('../images/gridimg/grid8.jpg');
 }
 
 .image-grid-item:nth-child(8):before {
-  background-image: url('./images/gridhoverimg/grdhvr8.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr8.jpg');
 }
 
 .image-grid-item:nth-child(9) {
-  background-image: url('./images/gridimg/grid9.jpg');
+  background-image: url('../images/gridimg/grid9.jpg');
 }
 
 .image-grid-item:nth-child(9):before {
-  background-image: url('./images/gridhoverimg/grdhvr9.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr9.jpg');
 }
 
 .image-grid-item:nth-child(10) {
-  background-image: url('./images/gridimg/grid10.jpg');
+  background-image: url('../images/gridimg/grid10.jpg');
 }
 
 .image-grid-item:nth-child(10):before {
-  background-image: url('./images/gridhoverimg/grdhvr10.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr10.jpg');
 }
 
 .image-grid-item:nth-child(11) {
-  background-image: url('./images/gridimg/grid11.jpg');
+  background-image: url('../images/gridimg/grid11.jpg');
 }
 
 .image-grid-item:nth-child(11):before {
-  background-image: url('./images/gridhoverimg/grdhvr11.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr11.jpg');
 }
 
 .image-grid-item:nth-child(12) {
-  background-image: url('./images/gridimg/grid12.jpg');
+  background-image: url('../images/gridimg/grid12.jpg');
 }
 
 .image-grid-item:nth-child(12):before {
-  background-image: url('./images/gridhoverimg/grdhvr12.jpg');
+  background-image: url('../images/gridhoverimg/grdhvr12.jpg');
 }

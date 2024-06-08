@@ -1,35 +1,20 @@
 // src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Banner from './components/Banner';
-import ImageGrid from './components/Grid'; // Import the ImageGrid component
-import './styles.css';  // Ensure the global styles are applied
+import Home from './home'; // Import the Home component
+import SignUp from './pages/Signup'; // Import the SignUp components
+import './styles/grid.css'
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <Banner />
-      <ImageGrid /> {/* Add the ImageGrid here */}
-      <main style={{ paddingBottom: '60px' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </main>
-      <Footer />
+   <Router basename="/shreya-frontend">
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Route to the Home component */}
+        <Route path="/signup" element={<SignUp />} /> {/* Route to the SignUp component */}
+      </Routes>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home Page</h2>;
-}
-
-function SignUp() {
-  return <h2>Sign Up Page</h2>;
 }
 
 export default App;
