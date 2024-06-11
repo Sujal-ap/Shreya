@@ -4,7 +4,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home'; // Import the Home component
 import SignUp from './pages/Signup'; // Import the SignUp components
-import './styles/grid.css'
 
 const App = () => {
   return (
