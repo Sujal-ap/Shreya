@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shreya-frontend/static/css/main.e46167a4.css",
-    "main.js": "/shreya-frontend/static/js/main.d34741e6.js",
+    "main.css": "/shreya-frontend/static/css/main.c6f8c151.css",
+    "main.js": "/shreya-frontend/static/js/main.7422b5ed.js",
     "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
     "static/media/bannerbg.jpg": "/shreya-frontend/static/media/bannerbg.d4dc63dccda636e4cda8.jpg",
     "static/media/bannerbg2.jpg": "/shreya-frontend/static/media/bannerbg2.dd5a42ad73448b1ed966.jpg",
@@ -12,17 +12,13 @@
     "static/media/grid12.jpg": "/shreya-frontend/static/media/grid12.60c710d2a71c5aa337b7.jpg",
     "static/media/grdhvr8.jpg": "/shreya-frontend/static/media/grdhvr8.23b9c71ab645a18721a3.jpg",
     "static/media/grid3.jpg": "/shreya-frontend/static/media/grid3.1315029525bb63e65241.jpg",
-    "static/media/slick.svg": "/shreya-frontend/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/shreya-frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/shreya-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/shreya-frontend/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shreya-frontend/index.html",
-    "main.e46167a4.css.map": "/shreya-frontend/static/css/main.e46167a4.css.map",
-    "main.d34741e6.js.map": "/shreya-frontend/static/js/main.d34741e6.js.map",
+    "main.c6f8c151.css.map": "/shreya-frontend/static/css/main.c6f8c151.css.map",
+    "main.7422b5ed.js.map": "/shreya-frontend/static/js/main.7422b5ed.js.map",
     "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e46167a4.css",
-    "static/js/main.d34741e6.js"
+    "static/css/main.c6f8c151.css",
+    "static/js/main.7422b5ed.js"
   ]
 }
