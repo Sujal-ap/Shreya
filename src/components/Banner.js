@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the styles
 
+
 const Banner = () => {
   const settings = {
     showArrows: true,
@@ -15,7 +16,7 @@ const Banner = () => {
     dynamicHeight: true,
     showThumbs: false
   };
-
+  console.log('Banner settings:', settings);
 
   return (
     <Carousel {...settings}>

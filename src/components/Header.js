@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../components/AuthContext.js';
+import { auth } from '../firebaseConfig.js';
 import '../styles/home.css'; // Make sure to import your CSS file for styling
 
 function Header() {
@@ -8,8 +9,14 @@ function Header() {
   const navigate = useNavigate();
 
   const handleSignOut = () => {
-    setUser(null);
-    navigate('/Signup'); // Redirect to the sign-in page after sign out
+    auth.signOut() // Add this line to actually sign the user out from Firebase
+      .then(() => {
+        setUser(null);
+        navigate('/Signup'); // Redirect to the sign-in page after sign out
+      })
+      .catch((error) => {
+        console.error("Error signing out: ", error);
+      });
   };
 
   return (
