@@ -28,7 +28,7 @@ function Header() {
           <div className="user-info">
             <img src={user.photoURL} alt="User profile" className="user-profile-pic" />
             <span className="user-name">{user.displayName}</span>
-            <button onClick={handleSignOut}>Sign Out</button>
+            <button className='sign-out-button' onClick={handleSignOut}>Sign Out</button>
           </div>
         ) : (
           <Link to="/Signup">Sign In</Link>

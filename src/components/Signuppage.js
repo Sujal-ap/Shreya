@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../components/AuthContext.js';
 import { auth } from '../firebaseConfig.js'; // Ensure auth is imported correctly
-import '../styles/signup.css';
 
 const Signuppage = () => {
   const navigate = useNavigate();
-  const [successMessage, setSuccessMessage] = useState(null);
   const { setUser } = useAuth();
 
   const handleSignInWithGoogle = async () => {
@@ -32,10 +30,8 @@ const Signuppage = () => {
         email: user.email,
         displayName: user.displayName,
         photoURL: user.photoURL,
+        successMessage: 'Sign in with Google successful!', // Add success message here
       });
-
-      // Set success message
-      setSuccessMessage('Sign in with Google successful!');
 
       // Redirect to home page after successful sign-in
       navigate('/');
@@ -48,13 +44,7 @@ const Signuppage = () => {
   return (
     <div className="signin-container">
       <h2>Sign In</h2>
-      <button onClick={handleSignInWithGoogle}>Sign In with Google</button>
-      
-      {successMessage && (
-        <div className="success-message">
-          {successMessage}
-        </div>
-      )}
+      <button className="google-signin-button" onClick={handleSignInWithGoogle}>Sign In with Google</button>
     </div>
   );
 };
