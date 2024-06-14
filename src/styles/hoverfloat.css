@@ -1,0 +1,134 @@
+/* src/styles/hoverfloat.css */
+
+.hoverfloat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .hoverfloat-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff; /* Bootstrap blue */
+    transition: color 0.3s;
+  }
+  
+  .hoverfloat-item:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .hoverfloat-content {
+    position: absolute;
+    top: 100%; /* Position below the item */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 600px; /* Adjust width as needed */
+    max-height: 400px; /* Maximum height to prevent overflow */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hoverfloat-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hoverfloat-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%; /* Occupy full width */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  }
+  
+  .hoverfloat-content li:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue on hover */
+  }
+  
+  .hoverfloat-content .brand,
+  .hoverfloat-content .category {
+    flex: 1; /* Occupy remaining space */
+    display: flex;
+    align-items: center;
+  }
+  
+  .hoverfloat-content .brand img,
+  .hoverfloat-content .category img {
+    width: 60px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px;
+    border-radius: 50%; /* Rounded border for images */
+  }
+  
+  .hoverfloat-content .text {
+    flex: 3; /* Occupy more space for text */
+    font-size: 16px;
+    color: #333; /* Darker text color */
+  }
+  
+  /* Background images for brands */
+  .auston {
+    background: url('../images/brandslogo/amlogo.jpg') no-repeat left center;
+    background-size: 30px 30px; /* Adjust size as needed */
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .ferrari {
+    background: url('../images/brandslogo/lflogo.jpg') no-repeat left center;
+    background-size: 30px 30px;
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .rr {
+    background: url('../images/brandslogo/rrlogo.jpg') no-repeat left center;
+    background-size: 30px 30px; /* Adjust size as needed */
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .defender {
+    background: url('../images/brandslogo/deflogo.jpg') no-repeat left center;
+    background-size: 30px 30px;
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  /* Background images for categories */
+  .category1 {
+    background: url('../images/brandslogo/rrlogo.jpg') no-repeat left center;
+    background-size: 30px 30px; /* Adjust size as needed */
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .category2 {
+    background: url('../images/brandslogo/deflogo.jpg') no-repeat left center;
+    background-size: 30px 30px;
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .category3 {
+    background: url('../images/brandslogo/lflogo.jpg') no-repeat left center;
+    background-size: 30px 30px;
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  .category4 {
+    background: url('../images/brandslogo/amlogo.jpg') no-repeat left center;
+    background-size: 30px 30px;
+    mix-blend-mode: multiply; /* Example blend mode */
+  }
+  
+  /* Additional classes for other brands and categories */
+  

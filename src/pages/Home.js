@@ -15,16 +15,28 @@ const Home = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false); // State for showing success message
 
   useEffect(() => {
-    // Show welcome message after 2 seconds on initial visit
-    if (!sessionStorage.getItem('hasVisited')) {
-      const timer = setTimeout(() => {
-        setShowWelcomeMessage(true);
-      }, 2000);
-      sessionStorage.setItem('hasVisited', 'true');
+  // Show welcome message after 2 seconds on initial visit
+  if (!sessionStorage.getItem(null)) {
+    setTimeout (() => {
+      setShowWelcomeMessage(true);
+    }, 2000);
 
-      return () => clearTimeout(timer); // Clean up timer
-    }
-  }, []);
+    sessionStorage.setItem('hasVisit', 'true'); // Set 'hasVisited' to 'true'}
+    
+  } 
+  else if (sessionStorage.hasVisit('true')) {
+    const timer = setTimeout(() => {
+      setShowWelcomeMessage(false); // Show welcome message after 2 seconds
+     // Set 'hasVisited' to 'true' after showing welcome message
+    });
+
+    return () => {
+      // Clean up timer if 'hasVisited' is true
+      clearTimeout(timer);
+    };
+  }
+}, []);
+
 
   useEffect(() => {
     // Show success message when user signs in
