@@ -1,21 +1,42 @@
-// src/components/Header.js
-
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../components/AuthContext.js';
 import { auth } from '../firebaseConfig.js';
-import HoverFloat from './HoverFloat.js'; // Correct import statement
+import HoverFloat from './HoverFloat.js';
+import gsap from 'gsap';
 import '../styles/home.css'; // Make sure to import your CSS file for styling
 
 function Header() {
   const { user, setUser } = useAuth();
   const navigate = useNavigate();
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const letters = textRef.current.querySelectorAll('span');
+    gsap.set(letters, { transformOrigin: '50% 50%' });
+
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+    tl.to(letters, {
+      duration: 0.4,
+      y: (index) => (index % 2 === 0 ? -30 : 30),
+      rotation: (index) => (index % 2 === 0 ? -20 : 20),
+      stagger: 0.05,
+      ease: 'power1.inOut',
+    })
+      .to(letters, {
+        duration: 0.6,
+        y: 0,
+        rotation: 0,
+        stagger: 0.05,
+        ease: 'elastic.out(1, 0.3)',
+      });
+  }, []);
 
   const handleSignOut = () => {
-    auth.signOut() // Add this line to actually sign the user out from Firebase
+    auth.signOut()
       .then(() => {
         setUser(null);
-        navigate('/Signup'); // Redirect to the sign-in page after sign out
+        navigate('/Signup');
       })
       .catch((error) => {
         console.error("Error signing out: ", error);
@@ -25,7 +46,11 @@ function Header() {
   return (
     <header className="header">
       <div className="header-top">
-        <h1>Thrift Store</h1>
+        <h1 ref={textRef}>
+          {'Vintage      Vibes      Thrift'.split('').map((char, index) => (
+            <span key={index}>{char}</span>
+          ))}
+        </h1>
         <nav>
           <Link to="/">Home</Link>
           {user ? (
