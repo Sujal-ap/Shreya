@@ -1,0 +1,75 @@
+.car-animation {
+    position: absolute;
+    width: 249px; /* Width of one frame */
+    height: 35px; /* Height of one frame */
+    top: 50%; /* Adjust starting position vertically */
+    animation-duration: 4s; /* Duration of each animation cycle */
+    animation-iteration-count: infinite; /* Repeat indefinitely */
+    z-index: 1; /* Ensure car appears above other header elements */
+  }
+  
+  /* Animation for car1 */
+  @keyframes drift1 {
+    0%, 100% { background-position: 0 0; }
+    16.67% { background-position: -249px 0; } /* 270 degrees */
+    33.33% { background-position: -498px 0; } /* 285 degrees */
+    50% { background-position: -747px 0; } /* 300 degrees */
+    66.67% { background-position: -996px 0; } /* 315 degrees */
+    83.33% { background-position: -1245px 0; } /* 330 degrees */
+  }
+  
+  /* Specify the background image for each keyframe */
+  @keyframes drift2 {
+    0%, 100% { background-position: 0 0; }
+    16.67% { background-position: -249px 0; } /* 180 degrees */
+    33.33% { background-position: -498px 0; } /* 195 degrees */
+    50% { background-position: -747px 0; } /* 210 degrees */
+    66.67% { background-position: -996px 0; } /* 225 degrees */
+    83.33% { background-position: -1245px 0; } /* 240 degrees */
+  }
+  
+  /* Apply animations to respective car elements */
+  .car1 {
+    animation-name: drift1;
+    left: 10%; /* Adjust positioning as needed */
+    background-image: url('../images/drift/drift1.png'); /* Adjust path based on your directory structure */
+  }
+  
+  .car2 {
+    animation-name: drift2;
+    left: 30%; /* Adjust positioning as needed */
+    background-image: url('../images/drift/drift2.png'); /* Adjust path based on your directory structure */
+  }
+  
+  /* Define animation for car3 */
+  @keyframes drift3 {
+    0%, 100% { background-position: 0 0; }
+    16.67% { background-position: -249px 0; } /* 90 degrees */
+    33.33% { background-position: -498px 0; } /* 105 degrees */
+    50% { background-position: -747px 0; } /* 120 degrees */
+    66.67% { background-position: -996px 0; } /* 135 degrees */
+    83.33% { background-position: -1245px 0; } /* 150 degrees */
+  }
+  
+  .car3 {
+    animation-name: drift3;
+    left: 50%; /* Adjust positioning as needed */
+    background-image: url('../images/drift/drift3.png'); /* Adjust path based on your directory structure */
+  }
+  
+  /* Define animation for car4 */
+  @keyframes drift4 {
+    0%, 100% { background-position: 0 0; }
+    16.67% { background-position: -249px 0; } /* 0 degrees */
+    33.33% { background-position: -498px 0; } /* 15 degrees */
+    50% { background-position: -747px 0; } /* 30 degrees */
+    66.67% { background-position: -996px 0; } /* 45 degrees */
+    83.33% { background-position: -1245px 0; } /* 60 degrees */
+  }
+  
+  .car4 {
+    animation-name: drift4;
+    left: 70%; /* Adjust positioning as needed */
+    background-image: url('../images/drift/drift4.png'); /* Adjust path based on your directory structure */
+  }
+  

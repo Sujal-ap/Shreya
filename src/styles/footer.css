@@ -1,54 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 20px;
+  padding-bottom: 100px; /* Add padding to ensure content doesn't overlap with fixed footer */
+}
+
 footer {
-    position: relative;
-    background-color: hwb(288 97% 1%);
-    padding: 20px;
-    text-align: center;
-    overflow: hidden; /* Ensure Mario doesn't go outside the footer */
-  }
-  
-  #mario {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 55px;
-    height: 47px;
-    background-image: url('../images/cartoon.png'); /* Path to your sprite sheet */
-    background-size: 55px 235px; /* Width x total height of the sprite sheet */
-    animation: run 1s steps(5) infinite;
-    z-index: 1; /* Ensure Mario appears above other content */
-  }
-  
-  @keyframes run {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 -235px; /* Move vertically through all frames */
-    }
-  }
-  
-  footer nav {
-    position: relative;
-    z-index: 2; /* Ensure links appear above Mario */
-  }
-  
-  footer nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  footer nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Keyframes for moving Mario horizontally */
-  @keyframes move {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: 100%;
-    }
-  }
-  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  background: url('../images/Manga.gif') no-repeat center center/cover; /* Full background GIF */
+  text-align: center;
+  z-index: 9999; /* Ensure it stays on top */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Adjust text color for readability */
+}
+
+footer nav {
+  z-index: 10000; /* Ensure links appear above background */
+}
+
+footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0 0 0;
+  z-index: 10000; /* Ensure text appears above background */
+}

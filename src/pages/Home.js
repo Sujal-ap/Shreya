@@ -10,6 +10,7 @@ import '../styles/home.css'; // Import styles specific to Home page
 import '../styles/grid.css';
 import '../styles/banner.css'; // Import grid styles
 
+
 const Home = () => {
   const { user } = useAuth();
   const [showWelcomeMessage, setShowWelcomeMessage] = useState(false); // State for showing welcome message
