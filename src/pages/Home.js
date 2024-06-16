@@ -4,76 +4,68 @@ import Footer from '../components/Footer.js';
 import Banner from '../components/Banner.js';
 import ImageGrid from '../components/Grid.js';
 import ErrorBoundary from '../components/ErrorBoundary.js';
-import FloatingMessage from '../components/FloatingMessage.js'; // Import FloatingMessage component
-import { useAuth } from '../components/AuthContext.js'; // Import useAuth hook
-import '../styles/home.css'; // Import styles specific to Home page
+import FloatingMessage from '../components/FloatingMessage.js';
+import { useAuth } from '../components/AuthContext.js';
+import Preloader from '../components/Preloader.js';
+import '../styles/home.css';
 import '../styles/grid.css';
-import '../styles/banner.css'; // Import grid styles
-
+import '../styles/banner.css';
 
 const Home = () => {
   const { user } = useAuth();
-  const [showWelcomeMessage, setShowWelcomeMessage] = useState(false); // State for showing welcome message
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // State for showing success message
+  const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [isPreloaderVisible, setIsPreloaderVisible] = useState(true);
 
   useEffect(() => {
-  // Show welcome message after 2 seconds on initial visit
-  if (!sessionStorage.getItem(null)) {
-    setTimeout (() => {
-      setShowWelcomeMessage(true);
-    }, 2000);
-
-    sessionStorage.setItem('hasVisit', 'true'); // Set 'hasVisited' to 'true'}
-    
-  } 
-  else if (sessionStorage.hasVisit('true')) {
-    const timer = setTimeout(() => {
-      setShowWelcomeMessage(false); // Show welcome message after 2 seconds
-     // Set 'hasVisited' to 'true' after showing welcome message
-    });
-
-    return () => {
-      // Clean up timer if 'hasVisited' is true
-      clearTimeout(timer);
-    };
-  }
-}, []);
-
+    if (!sessionStorage.getItem('hasVisited')) {
+      setTimeout(() => {
+        setShowWelcomeMessage(true);
+      }, 2000);
+      sessionStorage.setItem('hasVisited', 'true');
+    }
+  }, []);
 
   useEffect(() => {
-    // Show success message when user signs in
     if (user && user.successMessage) {
       setShowSuccessMessage(true);
-
       const timer = setTimeout(() => {
-        setShowSuccessMessage(false); // Hide success message after 5 seconds
+        setShowSuccessMessage(false);
       }, 5000);
-
-      return () => clearTimeout(timer); // Clean up timer
+      return () => clearTimeout(timer);
     }
   }, [user]);
 
+  const handleAnimationComplete = () => {
+    setIsPreloaderVisible(false);
+  };
+
   return (
     <>
-      <Header />
-      <ErrorBoundary>
-        <Banner />
-      </ErrorBoundary>
-      <ImageGrid />
-      <main style={{ paddingBottom: '60px' }}></main>
-      <Footer />
-      {showWelcomeMessage && (
-        <FloatingMessage
-          message="Welcome to our website!"
-          onClose={() => setShowWelcomeMessage(false)}
-          type="welcome"
-        />
-      )}
-      {showSuccessMessage && (
-        <FloatingMessage
-          message={user.successMessage}
-          type="success"
-        />
+      {isPreloaderVisible && <Preloader onAnimationComplete={handleAnimationComplete} />}
+      {!isPreloaderVisible && (
+        <>
+          <Header />
+          <ErrorBoundary>
+            <Banner />
+          </ErrorBoundary>
+          <ImageGrid />
+          <main style={{ paddingBottom: '60px' }}></main>
+          <Footer />
+          {showWelcomeMessage && (
+            <FloatingMessage
+              message="Welcome to our website!"
+              onClose={() => setShowWelcomeMessage(false)}
+              type="welcome"
+            />
+          )}
+          {showSuccessMessage && (
+            <FloatingMessage
+              message={user.successMessage}
+              type="success"
+            />
+          )}
+        </>
       )}
     </>
   );
