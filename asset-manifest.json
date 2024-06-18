@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shreya-frontend/static/css/main.a3eaa98d.css",
-    "main.js": "/shreya-frontend/static/js/main.3c25b90d.js",
+    "main.css": "/shreya-frontend/static/css/main.73ac97f1.css",
+    "main.js": "/shreya-frontend/static/js/main.3ad3e938.js",
     "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
     "static/media/Manga.gif": "/shreya-frontend/static/media/Manga.a7d1a4161b878dd5e56b.gif",
     "static/media/bannerbg.jpg": "/shreya-frontend/static/media/bannerbg.d4dc63dccda636e4cda8.jpg",
@@ -16,12 +16,12 @@
     "static/media/grdhvr8.jpg": "/shreya-frontend/static/media/grdhvr8.23b9c71ab645a18721a3.jpg",
     "static/media/grid3.jpg": "/shreya-frontend/static/media/grid3.1315029525bb63e65241.jpg",
     "index.html": "/shreya-frontend/index.html",
-    "main.a3eaa98d.css.map": "/shreya-frontend/static/css/main.a3eaa98d.css.map",
-    "main.3c25b90d.js.map": "/shreya-frontend/static/js/main.3c25b90d.js.map",
+    "main.73ac97f1.css.map": "/shreya-frontend/static/css/main.73ac97f1.css.map",
+    "main.3ad3e938.js.map": "/shreya-frontend/static/js/main.3ad3e938.js.map",
     "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3eaa98d.css",
-    "static/js/main.3c25b90d.js"
+    "static/css/main.73ac97f1.css",
+    "static/js/main.3ad3e938.js"
   ]
 }
