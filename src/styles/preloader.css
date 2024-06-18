@@ -1,71 +1,107 @@
 /* src/styles/preloader.css */
+
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-  }
-  
-  #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #03c282; /* Change to your preferred background color */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  #logo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-    background-image: url('../images/brandslogo/amlogo.jpg'); /* Path to your logo */
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: logo-animation 2s ease-in-out forwards;
-  }
-  
-  #website-name {
-    color: #fff; /* Change to your preferred color */
-    font-size: 2em;
-    margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03c282; /* Change to your preferred background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#website-name {
+  color: #fff; /* Change to your preferred color */
+  font-size: 2em;
+  opacity: 0;
+  animation: text-animation 1s ease-in-out forwards 2s;
+  display: flex;
+  flex-wrap: nowrap; /* Ensure letters stay on the same line */
+}
+
+/* Keyframes for the text animation */
+@keyframes text-animation {
+  0% {
     opacity: 0;
-    animation: text-animation 1s ease-in-out forwards 2s;
+    transform: translateY(-50px);
   }
-  
-  @keyframes logo-animation {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes text-animation {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+}
+
+/* Keyframes for animating the 'V' in 'VIBES' */
+@keyframes vibes-v-animation {
+  0% {
+    transform: translateY(0) rotate(0) scale(1);
+    opacity: 1;
   }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  25% {
+    transform: translateY(-10px) rotate(-5deg) scale(1.1);
+    opacity: 1;
   }
-  
+  50% {
+    transform: translateY(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(10px) rotate(5deg) scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply vibes-v-animation only to the 'V' in 'VIBES' */
+#website-name > span:nth-child(8) {
+  animation: vibes-v-animation 1s ease-in-out forwards 4s;
+}
+
+/* Previous animations for 'VINTAGE VIBES THRIFT' */
+/* Ensure they don't interfere with the new animation */
+@keyframes logo-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Other keyframes as needed */
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

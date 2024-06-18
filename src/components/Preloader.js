@@ -1,4 +1,3 @@
-// src/components/Preloader.js
 import React, { useEffect } from 'react';
 import '../styles/preloader.css';
 
@@ -14,8 +13,29 @@ const Preloader = ({ onAnimationComplete }) => {
 
   return (
     <div id="preloader">
-      <div id="logo"></div>
-      <h1 id="website-name">VINTAGE VIBES THRIFT</h1>
+      <h1 id="website-name">
+        {/* Wrap each letter in a span for individual animation */}
+        <span>V</span>
+        <span>I</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        &nbsp;
+        <span>V</span> {/* Animate this 'V' */}
+        <span>I</span>
+        <span>B</span>
+        <span>E</span>
+        <span>S</span>
+        &nbsp;
+        <span>T</span>
+        <span>H</span>
+        <span>R</span>
+        <span>I</span>
+        <span>F</span>
+        <span>T</span>
+      </h1>
     </div>
   );
 };
