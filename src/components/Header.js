@@ -4,8 +4,7 @@ import { useAuth } from '../components/AuthContext.js';
 import { auth } from '../firebaseConfig.js';
 import HoverFloat from './HoverFloat.js';
 import gsap from 'gsap';
-import '../styles/home.css'; // Make sure to import your CSS file for styling
- // Import the CSS file for the car animation
+import '../styles/header.css'; // Make sure to import your CSS file for styling
 
 function Header() {
   const { user, setUser } = useAuth();
@@ -46,12 +45,6 @@ function Header() {
 
   return (
     <header className="header">
-      {/* Drifting car animations */}
-      <div className="car-animation car1"></div>
-      <div className="car-animation car2"></div>
-      <div className="car-animation car3"></div>
-      <div className="car-animation car4"></div>
-
       <div className="header-top">
         <h1 ref={textRef}>
           {'Vintage      Vibes      Thrift'.split('').map((char, index) => (

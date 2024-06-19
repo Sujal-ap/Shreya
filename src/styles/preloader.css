@@ -42,7 +42,7 @@ body, html {
 @keyframes text-animation {
   0% {
     opacity: 0;
-    transform: translateY(-50px) translateZ(-300px); /* Move text towards the screen */
+    transform: translateY(-50px) translateZ(-600px); /* Move text towards the screen */
     filter: blur(5px); /* Start with more blur */
   }
   100% {
@@ -88,7 +88,7 @@ body, html {
 
 /* Apply vibes-v-animation only to the 'V' in 'VIBES' */
 #website-name > span:nth-child(8) {
-  animation: vibes-v-animation 1s ease-in-out forwards 4s;
+  animation: vibes-v-animation 1s ease-in-out forwards 3s;
 }
 
 /* Keyframes for zoom-out animation */
@@ -102,7 +102,7 @@ body, html {
 }
 
 #website-name > .zoom-target {
-  animation: zoom-out 2s ease-in-out forwards 6s; /* Start zooming out after 6 seconds */
+  animation: zoom-out 2s ease-in-out forwards 3s; /* Start zooming out after 6 seconds */
 }
 
 @keyframes fade-out {
