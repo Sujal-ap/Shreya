@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../styles/grid.css';
 
 const Grid = () => {
   useEffect(() => {

@@ -7,9 +7,7 @@ import ErrorBoundary from '../components/ErrorBoundary.js';
 import FloatingMessage from '../components/FloatingMessage.js';
 import { useAuth } from '../components/AuthContext.js';
 import Preloader from '../components/Preloader.js';
-import '../styles/home.css';
-import '../styles/grid.css';
-import '../styles/banner.css';
+
 
 const Home = () => {
   const { user } = useAuth();

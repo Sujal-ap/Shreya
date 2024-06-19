@@ -1,101 +1,111 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Albertsthal-Typewriter.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Roboto';
+  src: url('../fonts/Albertsthal-Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 header {
-    background-color: #f8f9fa; /* Light grey background */
-    color: #343a40; /* Dark grey text */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-  }
-  
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .header-bottom {
-    margin-top: 10px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'Roboto';
-    color: #0d7ea0;
-    display: flex;
-  }
-  
-  header h1 span {
-    display: inline-block;
-    margin-right: 2px; /* Add margin to create space between letters */
-  }
-  
-  nav {
-    margin-top: 10px;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    color: #007bff; /* Bootstrap blue */
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #0056b3; /* Darker blue on hover */
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-name {
-    margin-right: 10px;
-    color: rgb(106, 6, 236);
-  }
-  
-  .sign-out-button {
-    padding: 5px 10px;
-    cursor: pointer;
-    background-color: #17eb45; /* Green */
-    color: #0d0a0a;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .sign-out-button:hover {
-    background-color: #c82333; /* Darker red on hover */
-  }     
+  background-color: #f8f9fa; /* Light grey background */
+  color: #343a40; /* Dark grey text */
+  padding: 1.25rem; /* Use rem units for padding */
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+}
 
-  
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.header-bottom {
+  margin-top: 0.625rem; /* Use rem units for margins */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Use rem units for font size */
+  font-family: 'Roboto';
+  color: #0d7ea0;
+  display: flex;
+  flex-wrap: wrap; /* Allow letters to wrap on smaller screens */
+}
+
+header h1 span {
+  display: inline-block;
+  margin-right: 0.125rem; /* Use rem units for spacing */
+}
+
+nav {
+  margin-top: 0.625rem;
+}
+
+nav a {
+  margin: 0 0.9375rem; /* Use rem units for margins */
+  color: #007bff; /* Bootstrap blue */
+  text-decoration: none;
+  font-size: 1.125rem; /* Use rem units for font size */
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-pic {
+  width: 2.5rem; /* Use rem units for dimensions */
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 0.625rem; /* Use rem units for spacing */
+}
+
+.user-name {
+  margin-right: 0.625rem;
+  color: rgb(106, 6, 236);
+}
+
+.sign-out-button {
+  padding: 0.3125rem 0.625rem; /* Use rem units for padding */
+  cursor: pointer;
+  background-color: #17eb45; /* Green */
+  color: #0d0a0a;
+  border: none;
+  border-radius: 0.3125rem; /* Use rem units for border-radius */
+  transition: background-color 0.3s;
+}
+
+.sign-out-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .banner-slide {
-      height: 200px;
-    }
+  header h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
-  
-  @media (max-width: 480px) {
-    .banner-slide {
-      height: 150px;
-    }
+
+  nav a {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin: 0 0.625rem; /* Adjust margin for smaller screens */
   }
+
+  .user-profile-pic {
+    width: 2rem; /* Adjust size for smaller screens */
+    height: 2rem;
+  }
+
+  .sign-out-button {
+    padding: 0.3125rem 0.625rem; /* Adjust padding for smaller screens */
+  }
+}
