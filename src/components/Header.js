@@ -47,7 +47,7 @@ function Header() {
     <header className="header">
       <div className="header-top">
         <h1 ref={textRef}>
-          {'Vintage      Vibes      Thrift'.split('').map((char, index) => (
+          {'Vintage   Vibes   Thrift'.split('').map((char, index) => (
             <span key={index}>{char}</span>
           ))}
         </h1>

@@ -39,7 +39,7 @@ header h1 {
 
 header h1 span {
   display: inline-block;
-  margin-right: 0.125rem; /* Use rem units for spacing */
+  margin-right: 0.100rem; /* Use rem units for spacing */
 }
 
 nav {
