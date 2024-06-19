@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shreya-frontend/static/css/main.18498203.css",
+    "main.css": "/shreya-frontend/static/css/main.eb596c5e.css",
     "main.js": "/shreya-frontend/static/js/main.1eecfeb6.js",
     "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
     "static/media/Manga.gif": "/shreya-frontend/static/media/Manga.a7d1a4161b878dd5e56b.gif",
@@ -17,12 +17,12 @@
     "static/media/grdhvr8.jpg": "/shreya-frontend/static/media/grdhvr8.23b9c71ab645a18721a3.jpg",
     "static/media/grid3.jpg": "/shreya-frontend/static/media/grid3.1315029525bb63e65241.jpg",
     "index.html": "/shreya-frontend/index.html",
-    "main.18498203.css.map": "/shreya-frontend/static/css/main.18498203.css.map",
+    "main.eb596c5e.css.map": "/shreya-frontend/static/css/main.eb596c5e.css.map",
     "main.1eecfeb6.js.map": "/shreya-frontend/static/js/main.1eecfeb6.js.map",
     "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18498203.css",
+    "static/css/main.eb596c5e.css",
     "static/js/main.1eecfeb6.js"
   ]
 }
