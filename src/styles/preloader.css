@@ -1,4 +1,9 @@
-/* src/styles/preloader.css */
+/* preloader.css */
+
+@font-face {
+  font-family: 'BenguiatBoldTypewriter';
+  src: url('../fonts/Albertsthal-Typewriter.ttf') format('truetype');
+}
 
 body, html {
   margin: 0;
@@ -24,21 +29,36 @@ body, html {
 #website-name {
   color: #fff; /* Change to your preferred color */
   font-size: 2em;
+  font-family: 'BenguiatBoldTypewriter', sans-serif; /* Apply the Typewriter font */
   opacity: 0;
-  animation: text-animation 1s ease-in-out forwards 2s;
+  animation: text-animation 1s ease-in-out forwards 0.5s, blur-clear 2s ease-in-out forwards 2s;
   display: flex;
   flex-wrap: nowrap; /* Ensure letters stay on the same line */
+  filter: blur(2px); /* Apply initial blur effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Apply shadow for vintage effect */
 }
 
 /* Keyframes for the text animation */
 @keyframes text-animation {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-50px) translateZ(-300px); /* Move text towards the screen */
+    filter: blur(5px); /* Start with more blur */
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) translateZ(0); /* Bring text back to its original position */
+    filter: blur(2px); /* Reduce blur to final state */
+  }
+}
+
+/* Keyframes for clearing the blur */
+@keyframes blur-clear {
+  0% {
+    filter: blur(2px); /* Initial blur */
+  }
+  100% {
+    filter: blur(0); /* Clear blur */
   }
 }
 
@@ -71,31 +91,19 @@ body, html {
   animation: vibes-v-animation 1s ease-in-out forwards 4s;
 }
 
-/* Previous animations for 'VINTAGE VIBES THRIFT' */
-/* Ensure they don't interfere with the new animation */
-@keyframes logo-animation {
+/* Keyframes for zoom-out animation */
+@keyframes zoom-out {
   0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
     transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes text-animation {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: scale(50); /* Scale up so that only the 'V' is visible */
   }
 }
 
-/* Other keyframes as needed */
+#website-name > .zoom-target {
+  animation: zoom-out 2s ease-in-out forwards 6s; /* Start zooming out after 6 seconds */
+}
 
 @keyframes fade-out {
   0% {
