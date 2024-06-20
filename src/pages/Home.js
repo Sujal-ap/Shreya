@@ -7,7 +7,7 @@ import ErrorBoundary from '../components/ErrorBoundary.js';
 import FloatingMessage from '../components/FloatingMessage.js';
 import { useAuth } from '../components/AuthContext.js';
 import Preloader from '../components/Preloader.js';
-
+import '../styles/preloader.css';
 
 const Home = () => {
   const { user } = useAuth();
@@ -36,35 +36,38 @@ const Home = () => {
 
   const handleAnimationComplete = () => {
     setIsPreloaderVisible(false);
+    document.getElementById('homePage').classList.add('slide-up');
   };
 
   return (
     <>
       {isPreloaderVisible && <Preloader onAnimationComplete={handleAnimationComplete} />}
-      {!isPreloaderVisible && (
-        <>
-          <Header />
-          <ErrorBoundary>
-            <Banner />
-          </ErrorBoundary>
-          <ImageGrid />
-          <main style={{ paddingBottom: '60px' }}></main>
-          <Footer />
-          {showWelcomeMessage && (
-            <FloatingMessage
-              message="Welcome to our website!"
-              onClose={() => setShowWelcomeMessage(false)}
-              type="welcome"
-            />
-          )}
-          {showSuccessMessage && (
-            <FloatingMessage
-              message={user.successMessage}
-              type="success"
-            />
-          )}
-        </>
-      )}
+      <div id="homePage" className={!isPreloaderVisible ? 'slide-up' : ''}>
+        {!isPreloaderVisible && (
+          <>
+            <Header />
+            <ErrorBoundary>
+              <Banner />
+            </ErrorBoundary>
+            <ImageGrid />
+            <main style={{ paddingBottom: '60px' }}></main>
+            <Footer />
+            {showWelcomeMessage && (
+              <FloatingMessage
+                message="Welcome to our website!"
+                onClose={() => setShowWelcomeMessage(false)}
+                type="welcome"
+              />
+            )}
+            {showSuccessMessage && (
+              <FloatingMessage
+                message={user.successMessage}
+                type="success"
+              />
+            )}
+          </>
+        )}
+      </div>
     </>
   );
 };

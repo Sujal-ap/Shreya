@@ -8,7 +8,7 @@ const FloatingMessage = ({ message, type, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(true);
-    }, 2000); // Show message after 2 seconds
+    }, 4000); // Show message after 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
