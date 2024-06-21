@@ -43,7 +43,7 @@ const Signuppage = () => {
 
   return (
     <div className="signin-container">
-      <h2>Sign In</h2>
+      <h2>VINTAGE VIBES THRIFT</h2>
       <button className="google-signin-button" onClick={handleSignInWithGoogle}>Sign In with Google</button>
     </div>
   );

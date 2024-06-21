@@ -31,7 +31,7 @@ const SignupButton = () => {
 
   return (
     <Link to="/Signup" className={`signup-button ${isVisible ? 'visible' : ''}`}>
-      <span>→</span> Sign Up
+      <span>→</span> Sign In
     </Link>
   );
 };

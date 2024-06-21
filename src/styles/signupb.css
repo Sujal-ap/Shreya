@@ -12,7 +12,13 @@
   transition: opacity 0.3s ease;
   opacity: 0;
   pointer-events: none; /* Prevents interaction when hidden */
-  font-size: 14px; /* Adjust font size for smaller devices */
+  font-size: 14px;
+  z-index: 1000;
+   /* Adjust font size for smaller devices */
+}
+
+.signup-button:hover {
+  background-color: rgba(12, 167, 110, 1.5);
 }
 
 .signup-button.visible {

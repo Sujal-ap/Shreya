@@ -1,25 +1,24 @@
 /* Slide-up animation */
 @keyframes slide-up {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Apply slide-up animation when home page is visible */
-  #homePage.slide-up {
-    animation: slide-up 1s ease-out forwards;
-  }
-  
-  /* Ensure home page is initially hidden */
-  #homePage {
+  0% {
     opacity: 0;
     transform: translateY(100%);
-    transition: all 1s ease-out;
-    z-index: 1000; /* Ensure it has a lower z-index than the welcome message */
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply slide-up animation when home page is visible */
+#homePage.slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
+
+/* Ensure home page is initially hidden */
+#homePage {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease-out;
+  z-index: auto; /* Ensure it has a lower z-index than the welcome message */
+}

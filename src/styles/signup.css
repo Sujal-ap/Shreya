@@ -1,13 +1,23 @@
-/* signin.css */
+/* Style the wrapper to center the container */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* Optional: Adds padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in the height */
+}
 
 /* Style the container for the sign-in form */
 .signin-container {
   max-width: 400px;
-  margin: auto;
+  width: 100%; /* Ensure it doesn't exceed the max-width */
   padding: 20px;
   border: 1px solid #12edb3;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align text inside the container */
 }
 
 /* Style the Google sign-in button */
