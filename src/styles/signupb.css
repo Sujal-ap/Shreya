@@ -1,0 +1,25 @@
+/* signupb.css */
+
+.signup-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(12, 167, 110, 0.7); /* Semi-transparent blue */
+  color: #fff;
+  padding: 8px 16px; /* Adjust padding for smaller devices */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* Prevents interaction when hidden */
+  font-size: 14px; /* Adjust font size for smaller devices */
+}
+
+.signup-button.visible {
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction when visible */
+}
+
+.signup-button span {
+  margin-right: 5px;
+}

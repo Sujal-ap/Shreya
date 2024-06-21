@@ -1,3 +1,4 @@
+// pages/Home.js
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
@@ -7,7 +8,10 @@ import ErrorBoundary from '../components/ErrorBoundary.js';
 import FloatingMessage from '../components/FloatingMessage.js';
 import { useAuth } from '../components/AuthContext.js';
 import Preloader from '../components/Preloader.js';
+import SignupButton from '../components/SignupButton.js';
 import '../styles/preloader.css';
+import '../styles/signupb.css';
+
 
 const Home = () => {
   const { user } = useAuth();
@@ -54,7 +58,7 @@ const Home = () => {
             <Footer />
             {showWelcomeMessage && (
               <FloatingMessage
-                message="Welcome to our website!"
+                message="Welcome to VINTAGE VIBES THRIFT"
                 onClose={() => setShowWelcomeMessage(false)}
                 type="welcome"
               />
@@ -65,6 +69,7 @@ const Home = () => {
                 type="success"
               />
             )}
+            <SignupButton />
           </>
         )}
       </div>

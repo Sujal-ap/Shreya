@@ -17,7 +17,6 @@ const Banner = () => {
     dynamicHeight: true,
     showThumbs: false
   };
-  console.log('Banner settings:', settings);
 
   return (
     <Carousel {...settings}>

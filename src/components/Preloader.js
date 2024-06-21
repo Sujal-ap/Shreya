@@ -6,7 +6,7 @@ const Preloader = ({ onAnimationComplete }) => {
     const timer = setTimeout(() => {
       document.getElementById('preloader').style.animation = 'fade-out 1s forwards';
       setTimeout(onAnimationComplete, 1000); // Wait for the fade-out animation to complete
-    }, 4000); // Total duration of the animation including zoom-in
+    }, 2000); // Total duration of the animation including zoom-in
 
     return () => clearTimeout(timer);
   }, [onAnimationComplete]);
