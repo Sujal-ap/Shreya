@@ -1,25 +1,59 @@
-/* Style the wrapper to center the container */
+/* Base styles for the background */
+body {
+  background-color: #ffffff; /* White background for the entire page */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Styles for the animated bars */
 .signup-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px; /* Optional: Adds padding around the content */
-  box-sizing: border-box; /* Ensure padding is included in the height */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Ensure it's relative for absolute positioning of bars */
+  overflow: hidden; /* Hide overflow for the bars */
 }
 
-/* Style the container for the sign-in form */
 .signin-container {
+  position: relative;
+  z-index: 1; /* Ensure the sign-in container stays on top */
   max-width: 400px;
-  width: 100%; /* Ensure it doesn't exceed the max-width */
+  width: 100%;
   padding: 20px;
   border: 1px solid #12edb3;
   border-radius: 5px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align text inside the container */
+  text-align: center;
+  cursor: pointer; /* Change cursor on hover */
 }
 
+/* Container for animated bars */
+.background-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow events to pass through to signin-container */
+}
+
+/* White and black bars */
+.background-bars .bar {
+  position: absolute;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  background-color: #000000; /* Black bar color */
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+/* Animation for bars on hover */
+.signin-container:hover ~ .background-bars .bar {
+  width: 50px; /* Width of bars on hover */
+}
 /* Style the Google sign-in button */
 .google-signin-button {
   width: 100%;
