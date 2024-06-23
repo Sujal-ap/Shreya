@@ -5,9 +5,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
   
-  color: #fff; /* Dark grey text */
+  color: #04575d; /* Dark grey text */
   padding: 1.25rem; /* Use rem units for padding */
   text-align: center;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -32,7 +39,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem; /* Use rem units for font size */
   font-family: 'Roboto';
-  color: #fff;
+  color: #077979;
   display: flex;
   flex-wrap: wrap; /* Allow letters to wrap on smaller screens */
 }
@@ -48,9 +55,10 @@ nav {
 
 nav a {
   margin: 0 0.9375rem; /* Use rem units for margins */
-  color: #fff; /* Bootstrap blue */
+  color: #0e5675; /* Bootstrap blue */
   text-decoration: none;
-  font-size: 1.125rem; /* Use rem units for font size */
+  font-size: 1.125rem;
+  font-family: 'bebas'; /* Use rem units for font size */
   transition: color 0.3s;
 }
 
@@ -72,14 +80,16 @@ nav a:hover {
 
 .user-name {
   margin-right: 0.625rem;
-  color: rgb(106, 6, 236);
+  font-weight: 20;
+  font-family: 'roboto';
+  color: #03342e(106, 6, 236);
 }
 
 .sign-out-button {
   padding: 0.3125rem 0.625rem; /* Use rem units for padding */
   cursor: pointer;
-  background-color: #17eb45; /* Green */
-  color: #0d0a0a;
+  background-color: #03792c; /* Green */
+  color: #fff;
   border: none;
   border-radius: 0.3125rem; /* Use rem units for border-radius */
   transition: background-color 0.3s;

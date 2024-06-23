@@ -24,11 +24,11 @@ body, html {
 }
 
 #gradient-background {
-  position: fixed;
+  position: absolute;
   top: -50%;
   left: -50%;
-  width: 200%;
-  height: 200%;
+  width: 500vh;
+  height: 500vh;
   background: linear-gradient(90deg, #08da16a6, #066a6a, #01673b, #04796d);
   background-size: 300% 300%;
   animation: gradient-animation 5s ease infinite, circular-motion 10s linear infinite;

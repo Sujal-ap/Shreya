@@ -8,12 +8,12 @@
   justify-content: center; 
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 2000; /* Ensure it's above other content */
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 .floating-message-content {
   text-align: center;
-  background-color: #fff;
+  background-color: #01714c;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

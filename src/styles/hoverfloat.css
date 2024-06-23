@@ -1,5 +1,12 @@
 /* src/styles/hoverfloat.css */
 
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hoverfloat-container {
     display: flex;
     justify-content: space-between;
@@ -12,8 +19,9 @@
     position: relative;
     padding: 10px;
     cursor: pointer;
+    font-family: 'bebas';
     font-size: 18px;
-    color: #fff; /* Bootstrap blue */
+    color: #026060; /* Bootstrap blue */
     transition: color 0.3s;
   }
   
@@ -77,7 +85,7 @@
   .hoverfloat-content .text {
     flex: 3; /* Occupy more space for text */
     font-size: 16px;
-    color: #fff; /* Darker text color */
+    color: #006063; /* Darker text color */
   }
   
   /* Background images for brands */
