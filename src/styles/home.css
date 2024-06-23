@@ -1,24 +1,56 @@
-/* Slide-up animation */
-@keyframes slide-up {
+/* styles/home.css */
+
+.space-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #10683c, #0d7893, #007f00, #014e59, #028a26, #05609c, #067006);
+  z-index: -1;
+  background-size: 300% 300%; /* Increase background size for animation */
+  animation: gradientAnimation 30s linear infinite; /* Adjust animation duration */
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)); /* Semi-transparent white gradient */
+  opacity: 0.6; /* Adjust opacity as desired */
+  animation: shimmerAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation {
   0% {
-    opacity: 0;
-    transform: translateY(100%);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    background-position: 0% 50%;
   }
 }
 
-/* Apply slide-up animation when home page is visible */
-#homePage.slide-up {
-  animation: slide-up 1s ease-out forwards;
+@keyframes shimmerAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
-/* Ensure home page is initially hidden */
 #homePage {
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 1s ease-out;
-  z-index: auto; /* Ensure it has a lower z-index than the welcome message */
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  z-index: 2; /* Ensure the header is above the overlay */
 }

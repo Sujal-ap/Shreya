@@ -1,4 +1,5 @@
 // pages/Home.js
+
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
@@ -11,7 +12,7 @@ import Preloader from '../components/Preloader.js';
 import SignupButton from '../components/SignupButton.js';
 import '../styles/preloader.css';
 import '../styles/signupb.css';
-
+import '../styles/home.css'; // Import your custom CSS file
 
 const Home = () => {
   const { user } = useAuth();
@@ -46,16 +47,23 @@ const Home = () => {
   return (
     <>
       {isPreloaderVisible && <Preloader onAnimationComplete={handleAnimationComplete} />}
+      <div className="space-background"></div> {/* Animated space background */}
       <div id="homePage" className={!isPreloaderVisible ? 'slide-up' : ''}>
         {!isPreloaderVisible && (
           <>
-            <Header />
-            <ErrorBoundary>
-              <Banner />
-            </ErrorBoundary>
+            <div className="header">
+              <Header />
+            </div>
+            <div className="banner">
+              <ErrorBoundary>
+                <Banner />
+              </ErrorBoundary>
+            </div>
             <ImageGrid />
             <main style={{ paddingBottom: '60px' }}></main>
-            <Footer />
+            <div className="footer">
+              <Footer />
+            </div>
             {showWelcomeMessage && (
               <FloatingMessage
                 message="Welcome to VINTAGE VIBES THRIFT"

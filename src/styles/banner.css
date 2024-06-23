@@ -1,3 +1,5 @@
+/* styles/home.css */
+
 /* Banner slides styles */
 .banner-slide-1 {
   background-image: url('../images/bannerbg.jpg'); /* Adjust the path as needed */
@@ -14,17 +16,38 @@
 .banner-slide {
   background-size: cover;
   background-position: center;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
   padding: 20px;
+  width: 90%; /* Ensures the banner takes the full width */
+  height: 200px;
+  margin: 0 auto; /* Center the banner */
+  color: white;/* Default height for smaller screens */
 }
 
 .banner-content {
   background-color: rgba(0, 0, 0, 0.5);  /* Optional: to make text stand out */
   padding: 20px;
   border-radius: 10px;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .banner-slide {
+    height: 200px; /* Adjust height for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-slide {
+    height: 300px; /* Adjust height for large screens */
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner-slide {
+    height: 400px; /* Adjust height for extra large screens */
+  }
 }
