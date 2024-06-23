@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/shreya-frontend/static/css/main.449d0009.css",
-    "main.js": "/shreya-frontend/static/js/main.23bde2bc.js",
+    "main.css": "/shreya-frontend/static/css/main.a63b6796.css",
+    "main.js": "/shreya-frontend/static/js/main.f9a5c54a.js",
     "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
-    "static/media/Manga.gif": "/shreya-frontend/static/media/Manga.a7d1a4161b878dd5e56b.gif",
     "static/media/Albertsthal-Typewriter.ttf": "/shreya-frontend/static/media/Albertsthal-Typewriter.0b9a922d1cb155b8fcb2.ttf",
     "static/media/bannerbg.jpg": "/shreya-frontend/static/media/bannerbg.d4dc63dccda636e4cda8.jpg",
     "static/media/amlogo.jpg": "/shreya-frontend/static/media/amlogo.38e5316c76546eac8c7e.jpg",
@@ -17,12 +16,12 @@
     "static/media/grdhvr8.jpg": "/shreya-frontend/static/media/grdhvr8.23b9c71ab645a18721a3.jpg",
     "static/media/grid3.jpg": "/shreya-frontend/static/media/grid3.1315029525bb63e65241.jpg",
     "index.html": "/shreya-frontend/index.html",
-    "main.449d0009.css.map": "/shreya-frontend/static/css/main.449d0009.css.map",
-    "main.23bde2bc.js.map": "/shreya-frontend/static/js/main.23bde2bc.js.map",
+    "main.a63b6796.css.map": "/shreya-frontend/static/css/main.a63b6796.css.map",
+    "main.f9a5c54a.js.map": "/shreya-frontend/static/js/main.f9a5c54a.js.map",
     "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.449d0009.css",
-    "static/js/main.23bde2bc.js"
+    "static/css/main.a63b6796.css",
+    "static/js/main.f9a5c54a.js"
   ]
 }
