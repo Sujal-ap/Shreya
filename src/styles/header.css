@@ -39,7 +39,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem; /* Use rem units for font size */
   font-family: 'Roboto';
-  color: #077979;
+  color: #fff;
   display: flex;
   flex-wrap: wrap; /* Allow letters to wrap on smaller screens */
 }
@@ -55,7 +55,7 @@ nav {
 
 nav a {
   margin: 0 0.9375rem; /* Use rem units for margins */
-  color: #0e5675; /* Bootstrap blue */
+  color: #fff; /* Bootstrap blue */
   text-decoration: none;
   font-size: 1.125rem;
   font-family: 'bebas'; /* Use rem units for font size */

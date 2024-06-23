@@ -21,7 +21,7 @@
     cursor: pointer;
     font-family: 'bebas';
     font-size: 18px;
-    color: #026060; /* Bootstrap blue */
+    color: #fff; /* Bootstrap blue */
     transition: color 0.3s;
   }
   

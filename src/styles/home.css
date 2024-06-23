@@ -8,8 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
-  z-index: -1;
+  background: radial-gradient(circle, #10683c, #0d7893, #007f00, #014e59, #028a26, #05609c, #067006);  z-index: -1;
   background-size: 300% 300%; /* Increase background size for animation */
   animation: gradientAnimation 30s linear infinite; /* Adjust animation duration */
   overflow: hidden; /* Ensure the background doesn't overflow */
