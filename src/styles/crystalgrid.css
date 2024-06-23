@@ -1,0 +1,62 @@
+.crystalgrid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    height: 100vh;
+    perspective: 1000px; /* Add perspective for 3D effect */
+    background: #0e544e; /* Dark background to contrast the crystals */
+  }
+  
+  .crystal {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d; /* Ensure proper 3D rendering */
+  }
+  
+  .foreground-crystal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #067a67, #0b6c84); /* Gradient for foreground crystal */
+    box-shadow: 0 4px 6px rgba(4, 82, 98, 0.678); /* Box shadow for foreground crystal */
+  }
+  
+  .background-crystal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #0e544e, #073431); /* Gradient for background crystal */
+    mix-blend-mode: screen; /* Adjust blend mode as needed */
+  }
+  
+  .crystal-hovered {
+    transform: translateZ(20px) rotateY(20deg); /* Adjust hover transformation */
+  }
+  
+  .crystal-hovered .foreground-crystal {
+    background: linear-gradient(145deg, #ffffff, #bfbfbf); /* Adjust hover gradient for foreground crystal */
+    box-shadow: 0 8px 12px rgba(6, 83, 68, 0.629); /* Adjust hover box shadow for foreground crystal */
+    animation: shine 0.5s forwards; /* Shine animation for foreground crystal */
+  }
+  
+  .crystal-hovered .background-crystal {
+    background: linear-gradient(145deg, #0b6c84, #067a67); /* Adjust hover gradient for background crystal */
+    box-shadow: 0 8px 12px rgba(6, 83, 68, 0.629); /* Adjust hover box shadow for background crystal */
+  }
+  
+  @keyframes shine {
+    from {
+      background: rgba(7, 117, 119, 0.814); /* Adjust initial shine color */
+    }
+    to {
+      background: rgba(6, 70, 98, 0.5); /* Adjust final shine color */
+    }
+  }
+  

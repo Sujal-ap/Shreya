@@ -1,6 +1,6 @@
 // src/components/HoverFloat.js
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/hoverfloat.css'; // Import CSS for HoverFloat component
 
 const HoverFloat = () => {
@@ -48,7 +48,7 @@ const HoverFloat = () => {
         More
         {hoveredItem === 'more' && (
           <div className="hoverfloat-content">
-            {/* Add more content here */}
+            <Link to="/crystal-grid" className="hoverfloat-link">Go to Crystal Grid</Link>
           </div>
         )}
       </div>

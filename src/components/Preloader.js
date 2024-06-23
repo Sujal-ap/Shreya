@@ -13,6 +13,7 @@ const Preloader = ({ onAnimationComplete }) => {
 
   return (
     <div id="preloader">
+      <div id="gradient-background"></div>
       <h1 id="website-name">
         {/* Wrap each letter in a span for individual animation */}
         <span>V</span>
