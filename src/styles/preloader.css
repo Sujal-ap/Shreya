@@ -24,16 +24,15 @@ body, html {
 }
 
 #gradient-background {
-  position: absolute;
+  position: fixed;
   top: -50%;
   left: -50%;
-  width: 500vh;
-  height: 500vh;
+  width: 200%;
+  height: 200%;
   background: linear-gradient(90deg, #08da16a6, #066a6a, #01673b, #04796d);
   background-size: 300% 300%;
   animation: gradient-animation 5s ease infinite, circular-motion 10s linear infinite;
 }
-
 
 @keyframes gradient-animation {
   0% {
@@ -151,3 +150,4 @@ body, html {
     font-size: 1.2rem;
   }
 }
+
