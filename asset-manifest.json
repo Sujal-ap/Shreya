@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/shreya-frontend/static/css/main.84942175.css",
+    "main.css": "/shreya-frontend/static/css/main.0661aaa2.css",
     "main.js": "/shreya-frontend/static/js/main.f9a5c54a.js",
     "static/js/453.400a45c2.chunk.js": "/shreya-frontend/static/js/453.400a45c2.chunk.js",
     "static/media/Albertsthal-Typewriter.ttf": "/shreya-frontend/static/media/Albertsthal-Typewriter.0b9a922d1cb155b8fcb2.ttf",
     "static/media/bannerbg.jpg": "/shreya-frontend/static/media/bannerbg.d4dc63dccda636e4cda8.jpg",
     "static/media/amlogo.jpg": "/shreya-frontend/static/media/amlogo.38e5316c76546eac8c7e.jpg",
+    "static/media/BebasNeue-Regular.ttf": "/shreya-frontend/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "static/media/bannerbg2.jpg": "/shreya-frontend/static/media/bannerbg2.dd5a42ad73448b1ed966.jpg",
     "static/media/floatimg1.jpg": "/shreya-frontend/static/media/floatimg1.7418f8f4f7eb484d63c3.jpg",
     "static/media/grdhvr6.jpg": "/shreya-frontend/static/media/grdhvr6.4c423eb5a6a838de1a62.jpg",
@@ -16,12 +17,12 @@
     "static/media/grdhvr8.jpg": "/shreya-frontend/static/media/grdhvr8.23b9c71ab645a18721a3.jpg",
     "static/media/grid3.jpg": "/shreya-frontend/static/media/grid3.1315029525bb63e65241.jpg",
     "index.html": "/shreya-frontend/index.html",
-    "main.84942175.css.map": "/shreya-frontend/static/css/main.84942175.css.map",
+    "main.0661aaa2.css.map": "/shreya-frontend/static/css/main.0661aaa2.css.map",
     "main.f9a5c54a.js.map": "/shreya-frontend/static/js/main.f9a5c54a.js.map",
     "453.400a45c2.chunk.js.map": "/shreya-frontend/static/js/453.400a45c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84942175.css",
+    "static/css/main.0661aaa2.css",
     "static/js/main.f9a5c54a.js"
   ]
 }
