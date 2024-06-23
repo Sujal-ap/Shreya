@@ -13,7 +13,6 @@
 }
 
 header {
-  
   color: #04575d; /* Dark grey text */
   padding: 1.25rem; /* Use rem units for padding */
   text-align: center;
@@ -81,8 +80,8 @@ nav a:hover {
 .user-name {
   margin-right: 0.625rem;
   font-weight: 20;
-  font-family: 'roboto';
-  color: #03342e(106, 6, 236);
+  font-family: 'Roboto';
+  color: #03342e;
 }
 
 .sign-out-button {
@@ -96,11 +95,15 @@ nav a:hover {
 }
 
 .sign-out-button:hover {
-  background-color: #0b985b; /* Darker red on hover */
+  background-color: #0b985b; /* Darker green on hover */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
+  header {
+    padding: 0.625rem; /* Reduce padding for smaller screens */
+  }
+
   header h1 {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
@@ -120,5 +123,26 @@ nav a:hover {
   }
 }
 
+@media (max-width: 480px) {
+  header {
+    padding: 0.3125rem; /* Further reduce padding for very small screens */
+  }
 
+  header h1 {
+    font-size: 1.25rem; /* Further adjust font size for very small screens */
+  }
 
+  nav a {
+    font-size: 0.875rem; /* Further adjust font size for very small screens */
+    margin: 0 0.3125rem; /* Further adjust margin for very small screens */
+  }
+
+  .user-profile-pic {
+    width: 1.5rem; /* Further adjust size for very small screens */
+    height: 1.5rem;
+  }
+
+  .sign-out-button {
+    padding: 0.25rem 0.5rem; /* Further adjust padding for very small screens */
+  }
+}
