@@ -156,3 +156,27 @@ body, html {
     --scale-factor: 0.6; /* Adjust scale for even smaller screens */
   }
 }
+@media (max-width: 480px) {
+  #website-name {
+    padding: 0.3125rem;
+    font-size: 1.2rem; /* Further reduce padding for very small screens */
+  }
+
+  header h1 {
+    font-size: 1.25rem; /* Further adjust font size for very small screens */
+  }
+
+  nav a {
+    font-size: 0.875rem; /* Further adjust font size for very small screens */
+    margin: 0 0.3125rem; /* Further adjust margin for very small screens */
+  }
+
+  .user-profile-pic {
+    width: 1.5rem; /* Further adjust size for very small screens */
+    height: 1.5rem;
+  }
+
+  .sign-out-button {
+    padding: 0.25rem 0.5rem; /* Further adjust padding for very small screens */
+  }
+}
