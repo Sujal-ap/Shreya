@@ -29,7 +29,7 @@ body, html {
   left: -50%;
   width: 500vh;
   height: 500vh;
-  background: linear-gradient(90deg, #08da16a6, #066a6a, #01673b, #02443d);
+  background: linear-gradient(90deg, #0b6511a6, #066a6a, #017d5c, #017569);
   background-size: 300% 300%;
   animation: gradient-animation 5s ease infinite; /*, circular-motion 10s linear infinite*/
 }
