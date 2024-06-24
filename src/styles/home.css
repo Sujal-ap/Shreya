@@ -1,50 +1,36 @@
 /* styles/home.css */
-/* background: radial-gradient(circle, #10683c, #0d7893, #007f00, #014e59, #028a26, #05609c, #067006);*/
-
-
 .space-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 500vh;
-  height: 500vh;
-  background: radial-gradient(circle, #10683c, #0d7893, #1c7656, #02181c, #026024, #05609c, #067006); 
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #10683c, #14596b, #1c7656, #02181c, #026024, #02304e, #067006); 
   z-index: -1;
-  background-size: 300% 300%; /* Increase background size for animation */
-  animation: gradientAnimation 30s linear infinite; /* Adjust animation duration */
   overflow: hidden; /* Ensure the background doesn't overflow */
 }
 
-.overlay {
+.stars {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)); /* Semi-transparent white gradient */
-  opacity: 0.6; /* Adjust opacity as desired */
-  animation: shimmerAnimation 3s linear infinite;
+  background: transparent;
+  z-index: 0;
+  overflow: hidden;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  animation: twinkle 2s infinite ease-in-out;
 }
 
-@keyframes shimmerAnimation {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 #homePage {
@@ -59,8 +45,8 @@
 
 @media (max-width: 480px) {
   .space-background {
-    width: 2500vh;
-    height: 2500vh;
+    width: 100vw;
+    height: 100vh;
     padding: 0.3125rem; /* Further reduce padding for very small screens */
   }
 

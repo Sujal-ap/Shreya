@@ -1,5 +1,3 @@
-// pages/Home.js
-
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
@@ -13,6 +11,20 @@ import SignupButton from '../components/SignupButton.js';
 import '../styles/preloader.css';
 import '../styles/signupb.css';
 import '../styles/home.css'; // Import your custom CSS file
+
+const generateStars = () => {
+  const stars = [];
+  for (let i = 0; i < 50; i++) {
+    const style = {
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 2}s`,
+      animationDuration: `${Math.random() * 1.5 + 0.5}s`
+    };
+    stars.push(<div key={i} className="star" style={style}></div>);
+  }
+  return stars;
+};
 
 const Home = () => {
   const { user } = useAuth();
@@ -47,7 +59,11 @@ const Home = () => {
   return (
     <>
       {isPreloaderVisible && <Preloader onAnimationComplete={handleAnimationComplete} />}
-      <div className="space-background"></div> {/* Animated space background */}
+      <div className="space-background">
+        <div className="stars">
+          {generateStars()}
+        </div>
+      </div>
       <div id="homePage" className={!isPreloaderVisible ? 'slide-up' : ''}>
         {!isPreloaderVisible && (
           <>

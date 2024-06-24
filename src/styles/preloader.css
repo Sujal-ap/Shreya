@@ -31,6 +31,7 @@ body, html {
   height: 500vh;
   background: linear-gradient(90deg, #0b6511a6, #066a6a, #017d5c, #017569);
   background-size: 300% 300%;
+  z-index: 500;
   animation: gradient-animation 5s ease infinite; /*, circular-motion 10s linear infinite*/
 }
 
