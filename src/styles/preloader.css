@@ -29,7 +29,7 @@ body, html {
   left: -50%;
   width: 500vh;
   height: 500vh;
-  background: linear-gradient(90deg, #0b6511a6, #066a6a, #017d5c, #017569);
+  background: linear-gradient(90deg, #0b6511a6, #0c4739, #0f664f, #064025);
   background-size: 300% 300%;
   z-index: 500;
   animation: gradient-animation 5s ease infinite; /*, circular-motion 10s linear infinite*/
@@ -64,6 +64,7 @@ body, html {
   opacity: 0;
   animation: text-animation 1s ease-in-out forwards 0.5s, blur-clear 2s ease-in-out forwards 2s;
   display: flex;
+  z-index: 2000;
   flex-wrap: nowrap;
   filter: blur(2px);
   text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
