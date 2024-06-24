@@ -6,9 +6,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, #10683c, #0d7893, #007f00, #02181c, #028a26, #05609c, #067006);  z-index: -1;
+  width: 500vh;
+  height: 500vh;
+  background: radial-gradient(circle, #10683c, #0d7893, #007f00, #02181c, #028a26, #05609c, #067006); 
+  z-index: -1;
   background-size: 300% 300%; /* Increase background size for animation */
   animation: gradientAnimation 30s linear infinite; /* Adjust animation duration */
   overflow: hidden; /* Ensure the background doesn't overflow */
@@ -54,4 +55,30 @@
 .header {
   position: relative;
   z-index: 2; /* Ensure the header is above the overlay */
+}
+
+@media (max-width: 480px) {
+  .space-background {
+    width: 2500vh;
+    height: 2500vh;
+    padding: 0.3125rem; /* Further reduce padding for very small screens */
+  }
+
+  header h1 {
+    font-size: 1.25rem; /* Further adjust font size for very small screens */
+  }
+
+  nav a {
+    font-size: 0.875rem; /* Further adjust font size for very small screens */
+    margin: 0 0.3125rem; /* Further adjust margin for very small screens */
+  }
+
+  .user-profile-pic {
+    width: 1.5rem; /* Further adjust size for very small screens */
+    height: 1.5rem;
+  }
+
+  .sign-out-button {
+    padding: 0.25rem 0.5rem; /* Further adjust padding for very small screens */
+  }
 }
