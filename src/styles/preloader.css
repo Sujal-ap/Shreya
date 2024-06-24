@@ -29,9 +29,9 @@ body, html {
   left: -50%;
   width: 500vh;
   height: 500vh;
-  background: linear-gradient(90deg, #08da16a6, #066a6a, #01673b, #04796d);
+  background: linear-gradient(90deg, #08da16a6, #066a6a, #01673b, #02443d);
   background-size: 300% 300%;
-  animation: gradient-animation 5s ease infinite, circular-motion 10s linear infinite;
+  animation: gradient-animation 5s ease infinite; /*, circular-motion 10s linear infinite*/
 }
 
 @keyframes gradient-animation {
@@ -165,8 +165,8 @@ body, html {
   #gradient-background  {
     top: -250%;
     left: -250%;
-    width: 2500vh;
-    height: 2500vh; /* Further adjust font size for very small screens */
+    width: 2000vh;
+    height: 2000vh; /* Further adjust font size for very small screens */
   }
 
   nav a {
